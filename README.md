@@ -6,7 +6,10 @@ Inside of your Astro project, you'll see the following folders and files:
 
 ```
 /
+├── node_modules/...empty!
 ├── public/
+│   ├── favicon.ico
+│   └── logo.svg
 ├── src/
 │   ├── components/
 |   |   ├── BaseBody.astro
