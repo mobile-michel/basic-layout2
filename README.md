@@ -9,6 +9,11 @@ Inside of your Astro project, you'll see the following folders and files:
 ├── public/
 ├── src/
 │   └── components/
+|   |   └── BaseBody.astro
+|   |   └── BaseHead.astro
+|   |   └── MainFooter.astro
+|   |   └── MainHeader.astro
+|   |   └── Nav.astro
 │   └── layouts/
 │   └── pages/
 │       └── index.astro
