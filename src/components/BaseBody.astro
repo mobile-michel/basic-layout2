@@ -1,0 +1,19 @@
+---
+import MainHeader from './MainHeader.astro';
+import MainFooter from './MainFooter.astro';
+---
+<body class="font-sans antialiased bg-gray-100 dark:bg-gray-800 transition-colors">
+    <div id="wrapper" class="mx-auto max-w-4xl">
+        <MainHeader/>
+        <main>
+            <slot />
+        </main>
+        <MainFooter/>
+    </div>
+</body>
+
+<style>
+   .wrapper {
+        
+    }
+</style>

@@ -1,0 +1,38 @@
+---
+import PageLayout from '../layouts/PageLayout.astro'
+---
+<PageLayout>
+    <article>
+        <h2>Products</h2>
+        <p>All about our products (summary)</p>
+        <section>
+            <h3>Section title product one</h3>
+            <p>Description of product one</p>
+        </section>
+        <section>
+            <h3>Section title product two</h3>
+            <p>Description of product two</p>
+        </section>
+        <section>
+            <h3>Section title product three</h3>
+            <p>Description of product three</p>
+        </section>
+        <aside>Related aside
+            <h2>Recommendations</h2>
+            <p>Client recommendations about the product</p>
+        </aside>
+        <aside>Related aside
+            <h2>Journalist summary</h2>
+            <p>Summary of independant journalist evaluation of the product with link</p>
+        </aside>
+    </article>
+</PageLayout>
+
+<style>
+    img {
+        @apply mx-auto mt-6
+    }
+    h2 {
+      @apply text-3xl font-bold py-4
+    }
+</style>

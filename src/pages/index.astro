@@ -1,0 +1,40 @@
+---
+import PageLayout from '../layouts/PageLayout.astro'
+const title = 'Home'
+---
+<PageLayout>
+    <article>
+    <h2>Basic Layout n° 2</h2>
+    <p>/pages/<strong>index.astro</strong></p>
+    <ul>
+        <li>/layouts/PageLayout.astro</li>
+    </ul>
+    <p>/layouts/<strong>PageLayout.astro</strong></p>
+    <ul>
+        <li>/components/BaseHead.astro</li>
+        <li>/components/BaseBody.astro</li>
+    </ul>
+    <p>/components/<strong>BaseBody.astro</strong></p>
+    <ul>
+        <li>/components/MainHeader.astro</li>
+        <li>slot/ (main)</li>
+        <li>/components/MainFooter.astro</li>
+    </ul>
+    <p>/components/<strong>MainHeader.astro</strong></p>
+    <ul>
+        <li>/components/Nav.astro</li>
+    </ul>
+    </article>
+</PageLayout>
+
+<style>
+    h2 {
+      @apply text-3xl font-bold py-4
+    }
+    li {
+        @apply mx-6 list-disc
+    }
+    p.2 {
+        @apply font-bold
+    }
+</style>
