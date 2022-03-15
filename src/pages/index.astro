@@ -1,30 +1,43 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro'
+import { Markdown } from 'astro/components';
 const title = 'Home'
 ---
 <PageLayout>
     <article>
     <h2>Basic Layout n° 2</h2>
-    <p>/pages/<strong>index.astro</strong></p>
-    <ul>
-        <li>/layouts/PageLayout.astro</li>
-    </ul>
-    <p>/layouts/<strong>PageLayout.astro</strong></p>
-    <ul>
-        <li>/components/BaseHead.astro</li>
-        <li>/components/BaseBody.astro</li>
-    </ul>
-    <p>/components/<strong>BaseBody.astro</strong></p>
-    <ul>
-        <li>/components/MainHeader.astro</li>
-        <li>slot/ (main)</li>
-        <li>/components/MainFooter.astro</li>
-    </ul>
-    <p>/components/<strong>MainHeader.astro</strong></p>
-    <ul>
-        <li>/components/Nav.astro</li>
-    </ul>
+    <p>texte</p>
     </article>
+    <section>
+      <Markdown>
+      ## Layout Structure
+    ┌──────────────────────
+    │ layouts/PageLayout.astro
+    │ ┌────────────────────
+	│ │ components/BaseHead.astro
+	│ └────────────────────
+	│ ┌────────────────────
+	│ │ components/BaseBody.astro
+	│ │ ┌──────────────────
+	│ │ │ components/MainHeader.astro
+	│ │ │ ┌────────────────
+	│ │ │ │ components/Nav.astro
+	│ │ │ └────────────────
+	│ │ └──────────────────
+	│ │ ┌──────────────────
+	│ │ │ pages/index.astro
+	│ │ │ (slot)
+	│ │ │
+	│ │ │
+	│ │ │
+	│ │ └──────────────────
+    │ │ ┌──────────────────
+	│ │ │ components/MainFooter.astro
+	│ │ └──────────────────
+    │ └────────────────────
+    └──────────────────────
+      </Markdown>
+    </section>
 </PageLayout>
 
 <style>
@@ -34,7 +47,7 @@ const title = 'Home'
     li {
         @apply mx-6 list-disc
     }
-    p.2 {
-        @apply font-bold
+    section {
+        @apply font-mono
     }
 </style>
