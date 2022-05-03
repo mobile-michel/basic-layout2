@@ -1,5 +1,8 @@
 # Astro Starter Kit: Basic Layout no 2
 
+Netlify deploy: (https://nervous-meitner-bbf7a4.netlify.app/)
+
+
 ## Project Structure
 
 Inside of this Astro project, you'll see the following folders and files:
